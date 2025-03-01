@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bán Hàng</title>
+    <!-- Sử dụng Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-success text-white text-center py-4">
+        <h1>Trang Web Bán Hàng</h1>
+    </header>
+
+    <!-- Menu điều hướng sử dụng Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="#">Trang Chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Hiển thị sản phẩm bằng dòng sản phẩm sử dụng Bootstrap Row và Col -->
+            <div class="col-md-9">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Sản phẩm 1 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://newcdn.onshop.asia/images/mohinhtrungbay/w_2000,h_2000/da9fbfcb3c72ea2cb3633-min.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Súng đạn thạch MK8</h5>
+                                <p class="card-text">Súng sử dụng đạn thạch có uy lực mạnh.</p>
+                                <p class="card-text">Giá: 1.390.000 đ</p>
+                                <a href="product1.html" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://newcdn.onshop.asia/images/mohinhtrungbay/w_2000,h_2000/9325f8946899bfc7e68825-min.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Súng đạn thạch ARP9</h5>
+                                <p class="card-text">Súng sử dụng đạn thạch có uy lực mạnh, tầm bắn gần.</p>
+                                <p class="card-text">Giá: 1.280.000 đ</p>
+                                <a href="product2.html" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 3 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mã tấu</h5>
+                                <p class="card-text">Một chém đi luôn.</p>
+                                <p class="card-text">Giá: 290.000 đ</p>
+                                <a href="product3.html" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 4 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmRyISxBvvv0BwacJPcpo2LQaO9owlm8jBQ&s" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 4</h5>
+                                <p class="card-text">Mô tả sản phẩm 4.</p>
+                                <p class="card-text">Giá: $250</p>
+                                <a href="product4.html" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 5 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmRyISxBvvv0BwacJPcpo2LQaO9owlm8jBQ&s" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 5</h5>
+                                <p class="card-text">Mô tả sản phẩm 5.</p>
+                                <p class="card-text">Giá: $300</p>
+                                <a href="product5.html" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 6 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmRyISxBvvv0BwacJPcpo2LQaO9owlm8jBQ&s" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 6</h5>
+                                <p class="card-text">Mô tả sản phẩm 6.</p>  
+                                <p class="card-text">Giá: $350</p>
+                                <a href="product6.html" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-primary text-white p-3">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkID</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Cột 1 -->
+            <div class="col-md-4">
+                <div class="bg-dark text-white text-center py-4">
+                    <h3>Cột 1</h3>
+                    <p>Nội dung cột 1.</p>
+                </div>
+            </div>
+    
+            <!-- Cột 2 -->
+            <div class="col-md-4">
+                <div class="bg-dark text-white text-center py-4">
+                    <h3>Cột 2</h3>
+                    <p>Nội dung cột 2.</p>
+                </div>
+            </div>
+    
+            <!-- Cột 3 -->
+            <div class="col-md-4">
+                <div class="bg-dark text-white text-center py-4">
+                    <h3>Cột 3</h3>
+                    <p>Nội dung cột 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Thêm Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
